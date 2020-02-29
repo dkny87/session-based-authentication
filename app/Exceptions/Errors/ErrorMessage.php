@@ -31,6 +31,6 @@ class ErrorMessage
             throw new InvalidArgumentException('Invalid error code.');
         }
 
-        return static::$messages[$errorCode];
+        return self::$messages[$errorCode];
     }
 }
