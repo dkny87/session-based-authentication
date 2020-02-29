@@ -27,7 +27,7 @@ class ErrorMessage
      */
     public static function forCode($errorCode)
     {
-        if (!array_key_exists($errorCode, static::$messages)) {
+        if (!array_key_exists($errorCode, self::$messages)) {
             throw new InvalidArgumentException('Invalid error code.');
         }
 

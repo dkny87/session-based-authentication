@@ -72,12 +72,12 @@ class AuthService
 
     /**
      * @param $sessionId
-     * @return void
+     * @return bool
      */
     public function logout($sessionId)
     {
         $session = $this->sessionService->findWhere(['session_id' => $sessionId]);
 
-        return $session->delete();
+        return (bool)$session->delete();
     }
 }
