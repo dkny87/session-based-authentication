@@ -5,6 +5,7 @@ namespace App\Services\Auth;
 use App\Exceptions\InvalidCredentialsException;
 use App\Services\SessionService;
 use App\Services\UserService;
+use Exception;
 use Illuminate\Support\Facades\Hash;
 use Ramsey\Uuid\Uuid;
 
@@ -38,7 +39,7 @@ class AuthService
      * @param $email
      * @param $password
      * @return array
-     * @throws \Exception
+     * @throws Exception
      */
     public function login($email, $password)
     {

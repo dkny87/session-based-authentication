@@ -26,6 +26,7 @@ class Session
     {
         $this->sessionService = $sessionService;
     }
+
     /**
      * Handle an incoming request.
      *
