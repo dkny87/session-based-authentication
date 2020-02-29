@@ -1,7 +1,13 @@
 language: php
 
-php:
-  -7.2
+env:
+  global:
+    - setup=stable
+
+matrix:
+  fast_finish: true
+  include:
+    -   php: 7.2
 
 sudo: false
 
